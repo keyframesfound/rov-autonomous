@@ -2,19 +2,59 @@
 
 ## Description
 
-The **ROV Autonomous** project aims to create an autonomous underwater vehicle (ROV) capable of navigating underwater environments. The software detects 15x15 red squares via image processing and provides real-time feedback for precise control.
+The **ROV Autonomous** project is a cutting-edge endeavor in underwater robotics. Our goal is to create an autonomous underwater vehicle (ROV) that combines advanced image processing, real-time feedback, and precise navigation capabilities. Whether for scientific exploration, environmental monitoring, or search and rescue missions, our ROV aims to revolutionize underwater operations.
 
 ## Features
 
-- **Red Square Detection**: The software identifies 15x15 red squares in the ROV's field of view.
-- **Real-Time Feedback**: Provides immediate feedback to the operator for precise control.
-- **Underwater Navigation**: Enables autonomous navigation in underwater environments.
+1. **Red Square Detection**:
+   - Our software employs sophisticated image processing techniques to identify 15x15 red squares within the ROV's field of view. This feature is crucial for detecting specific objects of interest, such as submerged markers or anomalies.
+
+2. **Real-Time Feedback**:
+   - Immediate feedback is essential for precise control. Our system provides operators with real-time information about the ROV's position, orientation, and environmental conditions. Whether adjusting thrusters or avoiding obstacles, operators can make informed decisions on the fly.
+
+3. **Underwater Navigation**:
+   - Navigating underwater environments presents unique challenges. Our autonomous navigation system leverages depth sensors, compass data, and obstacle avoidance algorithms to guide the ROV safely through murky waters. Whether exploring shipwrecks or inspecting underwater infrastructure, our software ensures reliable navigation.
 
 ## Installation
+1. **Clone the Repository**:
+   - Open your terminal or command prompt.
+   - Navigate to the directory where you want to store your local copy of the repository.
+   - Run the following command to clone the repository:
+     ```
+     git clone https://github.com/keyframesfound/rov-autonomous.git
+     ```
 
-1. Clone this repository: `git clone https://github.com/keyframesfound/rov-autonomous.git`
-2. Install dependencies: `pip install -r requirements.txt`
-3. Run the main script: `python main.py`
+2. **Install Dependencies**:
+   - Ensure that you have Python installed on your system.
+   - Navigate to the cloned repository folder:
+     ```
+     cd rov-autonomous
+     ```
+   - Install the required dependencies using pip:
+     ```
+     pip install -r requirements.txt
+     ```
+
+3. **Configure Your Environment**:
+   - If necessary, create a virtual environment to isolate the project dependencies:
+     ```
+     python -m venv myenv
+     ```
+   - Activate the virtual environment:
+     - On Windows:
+       ```
+       myenv\Scripts\activate
+       ```
+     - On macOS and Linux:
+       ```
+       source myenv/bin/activate
+       ```
+
+4. **Run the Main Script**:
+   - Execute the main script to start the ROV Autonomous system:
+     ```
+     python main.py
+     ```
 
 ## Recommended Hardware
 
@@ -45,6 +85,20 @@ The **ROV Autonomous** software has several practical applications:
 4. **Environmental Monitoring**: Monitor pollution levels, track changes in underwater environments, and collect data for conservation efforts.
 
 By combining hardware, software, and real-time feedback, the **ROV Autonomous** project empowers users to explore and interact with the underwater world more effectively.
+
+## Inspirations and Similar Projects
+
+Here are some inspiring projects and developments related to AUVs and ROVs:
+
+1. **Armada by Ocean Infinity**:
+   - Ocean Infinity, a subsea survey company, launched a subsidiary called Armada. Armada specializes in producing automated surface vessels carrying subsea ROVs. These vessels can be used for underwater inspection.
+
+2. **Fugro and Sea-Kit International**:
+   - Geological survey company Fugro is collaborating with Sea-Kit International to develop drone ships. These ships aim to minimize or eliminate the dependency on support vessels and umbilicals, making them more autonomous. Improved flexibility during offshore inspections and enhanced worker safety are key benefits of such autonomous vessels.
+
+
+: [Offshore Technology: Will 2020 be the year of ROV and vessel automation?](https://www.offshore-technology.com/features/vessel-automated-uavs-rovs-offshore/)
+: [Wikipedia: Autonomous underwater vehicle](https://en.wikipedia.org/wiki/Autonomous_underwater_vehicle)
 
 ## Contributing
 
