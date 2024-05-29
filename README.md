@@ -1,19 +1,19 @@
 # ROV Autonomous
 
 ## Description
+The **ROV Autonomous** project is developed by the St Stephen's College (Underwater ROV) Team for the international ROV Mate competition in underwater robotics. Our goal is to create an autonomous underwater vehicle (ROV) combining the advanced image processing of computer vision, real-time feedback for easy and precise manoeuvring, and precise autonomous navigation capabilities. We are creating a less processor-intensive task to open up live and real-time autonomous piloting for any operator with a simple computer.
 
-The **ROV Autonomous** project is a cutting-edge endeavor in underwater robotics. Our goal is to create an autonomous underwater vehicle (ROV) that combines advanced image processing, real-time feedback, and precise navigation capabilities. Whether for scientific exploration, environmental monitoring, or search and rescue missions, our ROV aims to revolutionize underwater operations.
 
 ## Features
 
 1. **Red Square Detection**:
-   - Our software employs sophisticated image processing techniques to identify 15x15 red squares within the ROV's field of view. This feature is crucial for detecting specific objects of interest, such as submerged markers or anomalies.
+   - Our software uses image processing techniques to identify 15x15 red squares underwater. This feature is crucial for detecting specific locations of interest, such as submerged markers, which is part of the ROV tasks of the International Mate Competition. 
 
 2. **Real-Time Feedback**:
-   - Immediate feedback is essential for precise control. Our system provides operators with real-time information about the ROV's position, orientation, and environmental conditions. Whether adjusting thrusters or avoiding obstacles, operators can make informed decisions on the fly.
+   - Real-time feedback is for precise control when underwater, water currents, props and others are a large and genuine threat to our underwater ROV. We can transmit real-time updates to the piloting team regarding the current ROV situation using real-time autonomous feedback. Our system provides pilots real-time information about the ROV's position, orientation, and surrounding conditions. Whether adjusting thrusters or avoiding obstacles would be the best course of action, operators can make decisions within seconds to deal with problems that have arisen.
 
 3. **Underwater Navigation**:
-   - Navigating underwater environments presents unique challenges. Our autonomous navigation system leverages depth sensors, compass data, and obstacle avoidance algorithms to guide the ROV safely through murky waters. Whether exploring shipwrecks or inspecting underwater infrastructure, our software ensures reliable navigation.
+   - Navigating underwater environments presents unique challenges. Our autonomous navigation system leverages depth sensors, compass data, and obstacle avoidance algorithms to guide the ROV through rough water areas safely. 
 
 ## Installation
 1. **Clone the Repository**:
@@ -71,7 +71,7 @@ To get the most out of the **ROV Autonomous** software, consider using the follo
 The **ROV Autonomous** software works seamlessly with the following tools and libraries:
 
 - **OpenCV**: Used for image processing and red square detection.
-- **Python**: The primary programming language for the software.
+- **Python**is the primary programming language for the software.
 - **ROS (Robot Operating System)**: If you're building a more complex ROV system, consider integrating with ROS for communication between different components.
 - **GStreamer**: For streaming real-time video from the camera to the operator's interface.
 
