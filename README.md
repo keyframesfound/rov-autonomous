@@ -1,4 +1,5 @@
 # ROV Autonomous
+<img src="https://marinesanctuary.org/wp-content/uploads/2020/04/FGB_DFH24_gps-19-scaled.jpg" width="600" height="400">
 
 ## Description
 The **ROV Autonomous** project is developed by the St Stephen's College (Underwater ROV) Team for the international ROV Mate competition in underwater robotics. Our goal is to create an autonomous underwater vehicle (ROV) combining the advanced image processing of computer vision, real-time feedback for easy and precise manoeuvring, and precise autonomous navigation capabilities. We are creating a less processor-intensive task to open up live and real-time autonomous piloting for any operator with a simple computer.
@@ -8,12 +9,18 @@ The **ROV Autonomous** project is developed by the St Stephen's College (Underwa
 
 1. **Red Square Detection**:
    - Our software uses image processing techniques to identify 15x15 red squares underwater. This feature is crucial for detecting specific locations of interest, such as submerged markers, which is part of the ROV tasks of the International Mate Competition. 
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7jm39EZ-Mjt60lizqK9fqTnQDf_W-jfGaig&s" width="600" height="400">
+
+
 
 2. **Real-Time Feedback**:
    - Real-time feedback is for precise control when underwater, water currents, props and others are a large and genuine threat to our underwater ROV. We can transmit real-time updates to the piloting team regarding the current ROV situation using real-time autonomous feedback. Our system provides pilots real-time information about the ROV's position, orientation, and surrounding conditions. Whether adjusting thrusters or avoiding obstacles would be the best course of action, operators can make decisions within seconds to deal with problems that have arisen.
 
+
+
 3. **Underwater Navigation**:
    - Navigating underwater environments presents unique challenges. Our autonomous navigation system leverages depth sensors, compass data, and obstacle avoidance algorithms to guide the ROV through rough water areas safely. 
+
 
 ## Installation
 1. **Clone the Repository**:
