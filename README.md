@@ -38,20 +38,35 @@ The **ROV Autonomous** project is developed by the St Stephen's College (Underwa
      cd rov-autonomous
      ```
 
-3. **Configure Your Environment**:
-   - If necessary, create a virtual environment to isolate the project dependencies:
+3. **Python Script Installation**:
+   - Install Homebrew (if you haven't already) by opening a Terminal window and running the following command::
      ```
-     python -m venv myenv
+     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
      ```
-   - Activate the virtual environment:
-     - On Windows:
+   - Update your homebrew installation
+    ```
+     brew update
+   ```
+   - Once Homebrew is installed, you can use it to install the required dependencies. In this case, run the following commands in the Terminal::
+     - On macOS:
        ```
-       myenv\Scripts\activate
+       brew install cairo
+brew install pkg-config
+brew install gobject-introspection
        ```
-     - On macOS and Linux:
-       ```
-       source myenv/bin/activate
-       ```
+   - After installing the dependencies, you can install PyGObject using pip. Run the following command in the Terminal:
+    ```
+    pip install pycairo PyGObject
+   ```   
+    - Once Homebrew is installed, you can use it to install the required dependencies. In this case, run the following command in the Terminal:
+    ```
+    brew install gstreamer gst-plugins-base gst-plugins-good gst-plugins-bad gst-plugins-ugly
+   ```   
+    - After installing the dependencies, you might need to set the GST_PLUGIN_PATH environment variable. Run the following command in the Terminal:
+    ```
+    bexport GST_PLUGIN_PATH=/usr/local/lib/gstreamer-1.0
+   ```   
+   
 
 4. **Run the Main Script**:
    - Execute the main script to start the ROV Autonomous system:
@@ -59,17 +74,8 @@ The **ROV Autonomous** project is developed by the St Stephen's College (Underwa
      python main.py
      ```
 
-## Recommended Hardware
 
-To get the most out of the **ROV Autonomous** software, consider using the following hardware components:
-
-- **ROV Platform**: Choose a robust underwater vehicle platform with good maneuverability. Look for models that allow easy integration of sensors and cameras.
-- **Camera System**: Invest in a high-resolution camera system with low-light capabilities. A camera with adjustable focus and exposure settings is ideal.
-- **Depth Sensor**: Install a reliable depth sensor to help the ROV maintain its position and avoid collisions.
-- **Microcontroller or Single-Board Computer (SBC)**: Use a powerful microcontroller or SBC (e.g., Raspberry Pi, NVIDIA Jetson) to run the software.
-- **Thrusters and Motors**: Select efficient thrusters and motors for precise movement control.
-
-## Compatible Software
+## Software USed
 
 The **ROV Autonomous** software works seamlessly with the following tools and libraries:
 
