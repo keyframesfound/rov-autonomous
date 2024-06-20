@@ -37,10 +37,6 @@ The **ROV Autonomous** project is developed by the St Stephen's College (Underwa
      ```
      cd rov-autonomous
      ```
-   - Install the required dependencies using pip:
-     ```
-     pip install -r requirements.txt
-     ```
 
 3. **Configure Your Environment**:
    - If necessary, create a virtual environment to isolate the project dependencies:
