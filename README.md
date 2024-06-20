@@ -23,6 +23,7 @@ The **ROV Autonomous** project is developed by the St Stephen's College (Underwa
 
 
 ## Installation
+
 1. **Clone the Repository**:
    - Open your terminal or command prompt.
    - Navigate to the directory where you want to store your local copy of the repository.
@@ -39,34 +40,33 @@ The **ROV Autonomous** project is developed by the St Stephen's College (Underwa
      ```
 
 3. **Python Script Installation**:
-   - Install Homebrew (if you haven't already) by opening a Terminal window and running the following command::
+   - Install Homebrew (if you haven't already) by opening a Terminal window and running the following command:
      ```
      /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
      ```
-   - Update your homebrew installation
-    ```
+   - Update your Homebrew installation:
+     ```
      brew update
-   ```
-   - Once Homebrew is installed, you can use it to install the required dependencies. In this case, run the following commands in the Terminal::
+     ```
+   - Install the required dependencies using Homebrew. Run the following commands in the Terminal:
      - On macOS:
        ```
        brew install cairo
-brew install pkg-config
-brew install gobject-introspection
+       brew install pkg-config
+       brew install gobject-introspection
        ```
-   - After installing the dependencies, you can install PyGObject using pip. Run the following command in the Terminal:
-    ```
-    pip install pycairo PyGObject
-   ```   
-    - Once Homebrew is installed, you can use it to install the required dependencies. In this case, run the following command in the Terminal:
-    ```
-    brew install gstreamer gst-plugins-base gst-plugins-good gst-plugins-bad gst-plugins-ugly
-   ```   
-    - After installing the dependencies, you might need to set the GST_PLUGIN_PATH environment variable. Run the following command in the Terminal:
-    ```
-    bexport GST_PLUGIN_PATH=/usr/local/lib/gstreamer-1.0
-   ```   
-   
+   - After installing the dependencies, you can install PyGObject using pip:
+     ```
+     pip install pycairo PyGObject
+     ```
+   - Additionally, install the following GStreamer dependencies:
+     ```
+     brew install gstreamer gst-plugins-base gst-plugins-good gst-plugins-bad gst-plugins-ugly
+     ```
+   - Set the GST_PLUGIN_PATH environment variable:
+     ```
+     export GST_PLUGIN_PATH=/usr/local/lib/gstreamer-1.0
+     ```
 
 4. **Run the Main Script**:
    - Execute the main script to start the ROV Autonomous system:
